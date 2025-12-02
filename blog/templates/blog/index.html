@@ -6,20 +6,14 @@
 {% endblock %}
 
 {% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post.css" %}">
     <link rel="stylesheet" href="{% static "blog/index.css" %}">
 {% endblock %}
 
-{% block content %}
-    <header id="main-navigation">
-        <h1><a href="">Alex's Blog</a></h1>
-    <nav>
-        <a href="">All Posts</a>
-    </nav>
-    </header>
-
+{% block content %}s
     <section id="welcome">
         <header>
-            <img src="" alt="Alex - The Author of This Blog">
+            <img src="{% static "blog/images/alex_tv_muscle.jpg" %}" alt="Alex - The Author of This Blog">
             <h2>ALEX'S Blog</h2>
         </header>
         <p>Hi, I am Alex and I love to blog about tech and the world!</p>
@@ -29,16 +23,7 @@
         <h2>My Latest Thoughts</h2>
 
         <ul>
-            <li>
-                <article class="post">
-                    <a href="">
-                        <img src="" alt="Mountain Hiking">
-                        <div class="post_content"></div>
-                        <h3>Mountain Hiking</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab cupiditate distinctio ea excepturi ipsum labore omnis rem sapiente ut? Nostrum rerum, sapiente. Consequuntur exercitationem id ipsam saepe! Dicta, repellendus?</p>
-                    </a>
-                </article>
-            </li>
+            {% include "blog/includes/post.html" %}
         </ul>
     </section>
 
