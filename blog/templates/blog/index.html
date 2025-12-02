@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+	My Blog
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock %}
+
+{% block content %}
+    <header id="main-navigation">
+        <h1><a href="">Alex's Blog</a></h1>
+    <nav>
+        <a href="">All Posts</a>
+    </nav>
+    </header>
+
+    <section id="welcome">
+        <header>
+            <img src="" alt="Alex - The Author of This Blog">
+            <h2>ALEX'S Blog</h2>
+        </header>
+        <p>Hi, I am Alex and I love to blog about tech and the world!</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest Thoughts</h2>
+
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountain Hiking">
+                        <div class="post_content"></div>
+                        <h3>Mountain Hiking</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab cupiditate distinctio ea excepturi ipsum labore omnis rem sapiente ut? Nostrum rerum, sapiente. Consequuntur exercitationem id ipsam saepe! Dicta, repellendus?</p>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>What I Do</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore, ex! A cupiditate dolorem doloribus ducimus earum excepturi iure magnam obcaecati odio officia quae quaerat quasi rem reprehenderit soluta, unde!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium aliquam aut consequatur consequuntur deserunt dicta fuga in inventore libero magni maxime modi numquam omnis provident quia quis, sint veniam.</p>
+    </section>
+{% endblock %}
