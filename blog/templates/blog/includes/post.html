@@ -2,11 +2,12 @@
 
 <li>
     <article class="post">
-        <a href="">
+        <a href="{% url "post-detail-page" "the-mountains" %}">
             <img src="{% static "blog/images/mountains.jpg" %}" alt="Mountain Hiking">
-            <div class="post_content"></div>
-            <h3>Mountain Hiking</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab cupiditate distinctio ea excepturi ipsum labore omnis rem sapiente ut? Nostrum rerum, sapiente. Consequuntur exercitationem id ipsam saepe! Dicta, repellendus?</p>
+            <div class="post_content">
+                <h3>Mountain Hiking</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab cupiditate distinctio ea excepturi ipsum labore omnis rem sapiente ut? Nostrum rerum, sapiente. Consequuntur exercitationem id ipsam saepe! Dicta, repellendus?</p>
+            </div>
         </a>
     </article>
 </li>

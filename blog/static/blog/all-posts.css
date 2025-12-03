@@ -29,27 +29,15 @@ ul {
   gap: 1.5rem;
 }
 
-#latest-posts {
-  background-color: white;
-  padding: 2rem;
+.post img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.post a {
+  height: 22rem;
+  transform-origin: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
-  width: 60rem;
-  margin: -6rem auto 2rem auto;
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
-}
-
-#latest-posts h2 {
-  text-align: center;
-}
-
-#latest-posts ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-#latest-posts li {
-  flex: 1;
+  background-color: white;
 }
